@@ -11,9 +11,9 @@ const Header = () => {
       </a>
       <ul className="flex space-x-10 items-center text-[#333] font-[500] text-[18px]">
         <i className="not-italic"><a className="actNav nav text-[18px]  hover:text-[#EB5757]"
-                                     href="#whyMazdoor">Why MAZDOOR</a></i>
+                                     href="#whyMazdoor">Why KAAMGAR</a></i>
         <i className="not-italic"><a className="nav hover:text-[#EB5757]" href="#services">Services</a></i>
-        <i className="not-italic"><a className="nav hover:text-[#EB5757]" href="#mazdoors">Mazdoors</a></i>
+        <i className="not-italic"><a className="nav hover:text-[#EB5757]" href="#mazdoors">Kaamgars</a></i>
         <i className="not-italic"><a className="mav hover:text-[#EB5757]" href="#team">Team</a></i>
         <i className="not-italic"><a className="nav hover:text-[#EB5757]" href="#aboutUS">About Us</a></i>
         <i className="not-italic flex items-center">
