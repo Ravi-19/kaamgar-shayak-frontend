@@ -6,6 +6,7 @@ import TeamCard from "./TeamCard";
 
 const Team = () => {
   const team = useSelector(state => state.mazdoorStore.team);
+ // console.log(team) ; 
   return (
     <div id="team" className="flex flex-col px-20 mt-[100px]">
       <div className="relative">
@@ -30,7 +31,9 @@ const Team = () => {
       <div className="flex items-center mt-[80px]">
         <div className="flex w-[100%] space-x-10 justify-center">
           {map(team, (member, index) => {
-            return <TeamCard key={index} member={member} />;
+           
+            return <TeamCard key={index} member={member}/>  ;
+           
           })}
         </div>
       </div>

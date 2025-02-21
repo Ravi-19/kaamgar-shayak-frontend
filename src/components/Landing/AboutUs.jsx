@@ -20,10 +20,10 @@ const AboutUs = () => {
                         About Us
                     </p>
                     <h2 className="leading-[60px] font-bold text-[#333333] text-[45px]">
-                        Know About Mazdoor
+                        Know About Kaamgar Sahayak
                     </h2>
                     <p className="text-[18px] text-[#333333] leading-[30px] mt-5 mb-10 w-[400px] font-[500]">
-                        Discover Mazdoor wherever and whenever and get your Mazdoor at your doorstep.
+                        Discover Kaamgar Sahayak wherever and whenever and get your Kaamgar at your doorstep.
                     </p>
                     <a className="text-center w-[150px] bg-[#EB5757] mb-[100px] hover:bg-[#F2C94C] text-white hover:text-black px-[20px] py-[14px] rounded-[25px]"
                        href="#">
