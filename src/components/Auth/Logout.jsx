@@ -16,7 +16,7 @@ const Logout=()=>{
       onClick={() => dispatch(updatePopup({status:false,type:popup.type,message:popup.message}))}
       className="fa fa-close absolute top-2 right-2 rounded-sm bg-[#EB5757] text-white px-2 py-1 hover:bg-[#F2C94C] hover:text-[#333333] cursor-pointer">
     </i>
-    <h1 className="text-2xl text-[#EB5757] font-bold">Logout to MAZDOOR</h1>
+    <h1 className="text-2xl text-[#EB5757] font-bold">Logout to KAAMGAR SAHAYAK</h1>
     <form
       className="flex flex-col items-center justify-center gap-10 w-full">
       <div className="flex space-x-3 items-center">

@@ -14,7 +14,7 @@ const SelectRole = () => {
       onClick={() => dispatch(updatePopup({status:false,type:"select-role",message:""}))}
       className="fa fa-close absolute top-2 right-2 rounded-sm bg-[#EB5757] text-white px-2 py-1 hover:bg-[#F2C94C] hover:text-[#333333] cursor-pointer">
     </i>
-    <h1 className="text-2xl text-[#EB5757] font-bold">Join MAZDOOR</h1>
+    <h1 className="text-2xl text-[#EB5757] font-bold">Join KAAMGAR SAHAYAK</h1>
     <h1 className="text-[#EB5757] font-bold">AS A</h1>
     <div className="flex justify-between gap-10 w-full px-10 ">
       <div
