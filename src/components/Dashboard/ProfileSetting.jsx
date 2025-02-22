@@ -69,7 +69,7 @@ export const ProfileSetting = () => {
   useEffect(() => { // load states and labor types
     dispatch(loadLaborsTypes());
     axios.post(statesURL, {
-      country: "Pakistan"
+      country: "India"
     }).then(res => {
       setStates(res.data.data.states);
     });
@@ -77,7 +77,7 @@ export const ProfileSetting = () => {
   useEffect(() => { // load cities
     if (state) {
       axios.post(citiesURL, {
-        country: "Pakistan",
+        country: "India",
         state
       }).then(res => {
         setCities(res.data.data);
@@ -110,8 +110,8 @@ export const ProfileSetting = () => {
       } else user.type = type;
     } else user.type = "";
     if (startingWage) user.startingWage = startingWage;
-    if (phone && phone !== "923") {
-      if (phone.length !== 12) {
+    if (phone && phone !== "+91") {
+      if (phone.length !== 10) {
         NotificationManager.error("Phone number should be of 9 digits", "ERROR!", 5000, () => {
           alert("callback");
         });
@@ -188,7 +188,7 @@ export const ProfileSetting = () => {
           NotificationManager.error("Mobile account number is required", "ERROR!", 5000);
           flag = true;
         } else {
-          if (mobAccNo.length !== 12) {
+          if (mobAccNo.length !== 10) {
             NotificationManager.error("Mobile account number should be of 9 digits", "ERROR!", 5000);
             flag = true;
           } else {
@@ -425,7 +425,7 @@ export const ProfileSetting = () => {
                     style: { color: "#EB5757" } // change label color here
                   }}
                   InputProps={{
-                    startAdornment: <InputAdornment position="start">+923</InputAdornment>,
+                    startAdornment: <InputAdornment position="start">+91</InputAdornment>,
                     inputProps: {
                       maxLength: 9,
                       minLength: 9,
@@ -435,8 +435,8 @@ export const ProfileSetting = () => {
                   label="Contact No."
                   type="number"
                   value={phone.substring(3)}
-                  helperText="e.g, +923xxxxxxxxx"
-                  onChange={e => setPhone("923" + e.target.value)}
+                  helperText="e.g, +91xxxxxxxxx"
+                  onChange={e => setPhone("+91" + e.target.value)}
                 />
                 {user?.role === "LABOR" &&<TextField
                   fullWidth
@@ -767,7 +767,7 @@ export const ProfileSetting = () => {
                           style: { color: "#EB5757" } // change label color here
                         }}
                         InputProps={{
-                          startAdornment: <InputAdornment position="start">+923</InputAdornment>,
+                          startAdornment: <InputAdornment position="start">+91</InputAdornment>,
                           inputProps: {
                             maxLength: 9,
                             minLength: 9,
@@ -777,7 +777,7 @@ export const ProfileSetting = () => {
                         label="Mobile Account Number"
                         type="number"
                         value={mobAccNo.substring(3)}
-                        onChange={e => setMobAccNo("923" + e.target.value)}
+                        onChange={e => setMobAccNo("+91" + e.target.value)}
                       />
                     </div>
                   )}
