@@ -79,7 +79,7 @@ export const OrderMiniCard = ({ project, user,tab }) => {
             </div>
             <div className={`text-sm font-semibold text-lightGray  w-[113px]  ${user?.role==="ADMIN" && "!w-[113px]"}`}>
                 <div className="flex items-center h-[45px]">
-                    {project?.price} pkr
+                    {project?.price} INR
                 </div>
             </div>
             <div className={`text-sm font-semibold text-lightGray  w-[200px] ${user?.role==="ADMIN" && "!w-[270px]"}`}>

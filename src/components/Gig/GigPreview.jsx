@@ -112,7 +112,7 @@ export const GigPreview = () => {
           <h3>
           Starting at:
         </h3>
-          <h3 className="text-darkBlack">{gig?.price}pkr</h3>
+          <h3 className="text-darkBlack">{gig?.price}INR</h3>
         </span>
               {/*Contact Me button*/}
               <button

@@ -43,7 +43,7 @@ export const GigCard = ({ gig }) => {
           <h3 className="uppercase text-[14px]">
           Starting at
         </h3>
-          <h3 className="text-darkBlack text-[16px]">{gig?.price}pkr</h3>
+          <h3 className="text-darkBlack text-[16px]">{gig?.price}INR</h3>
         </span>
       </div>
 
