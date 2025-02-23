@@ -18,7 +18,7 @@ export const GigCardMini=({gig,setSearch})=>{
       {/* starting quote */}
       <div className="flex flex-col justify-center items-center">
         <span className="text-[12px] text-[#EB5757]">Starting at</span>
-        <h1 className="text-[#222222] text-[14px] font-bold">{gig?.price}INR</h1>
+        <h1 className="text-[#222222] text-[14px] font-bold">{gig?.price} INR</h1>
       </div>
     </Link>
   );
