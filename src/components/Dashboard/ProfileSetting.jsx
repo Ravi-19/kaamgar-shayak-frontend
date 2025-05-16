@@ -39,7 +39,7 @@ export const ProfileSetting = () => {
   const [others, setOthers] = useState("");
   const [startingWage, setStartingWage] = useState(user.startingWage || "");
   const [phone, setPhone] = useState(user.phone || "");
-  const [CNIC, setCNIC] = useState(user.CNIC || "");
+  const [AADHAR, setAADHAR] = useState(user.AADHAR || "");
   const [state, setState] = useState(user.state || "");
   const [cities, setCities] = useState([]);
   const [city, setCity] = useState(user.city || "");
@@ -119,15 +119,15 @@ export const ProfileSetting = () => {
       }
       user.phone = phone;
     } else user.phone = "";
-    if (CNIC) {
-      if (CNIC.length !== 13) {
-        NotificationManager.error("CNIC number should be of 13 digits", "ERROR!", 5000, () => {
+    if (AADHAR) {
+      if (AADHAR.length !== 12) {
+        NotificationManager.error("AADHAR number should be of 13 digits", "ERROR!", 5000, () => {
           alert("callback");
         });
         flag = true;
       }
-      user.CNIC = CNIC;
-    } else user.CNIC = "";
+      user.AADHAR = AADHAR;
+    } else user.AADHAR = "";
 
     //validating payment method
     if (paymentSelection === "Card" || paymentSelection === "Both") {
@@ -410,7 +410,7 @@ export const ProfileSetting = () => {
 
 
               </div>
-              {/*Phone and CNIC*/}
+              {/*Phone and AADHAR*/}
               <div className="w-full flex gap-5 justify-between">
                 <TextField
                   fullWidth
@@ -481,11 +481,11 @@ export const ProfileSetting = () => {
                       min: 0
                     }
                   }}
-                  label="CNIC"
+                  label="AADHAR"
                   type="number"
-                  value={CNIC}
+                  value={AADHAR}
                   helperText="without dashes*"
-                  onChange={e => setCNIC(e.target.value)}
+                  onChange={e => setAADHAR(e.target.value)}
                 />
               </div>
               {/*State and city*/}
